@@ -26,7 +26,7 @@ class AppFixtures extends Fixture
     public function __construct(Connection $connexion, UserPasswordHasherInterface $hasher, SluggerInterface $slugger)
     {
         $this->connexion = $connexion;
-        $this->hasheur = $hasher;
+        $this->hasher = $hasher;
         $this->slugger = $slugger;
     }
 
@@ -92,11 +92,11 @@ class AppFixtures extends Fixture
 
         for ($i=1; $i <= 20; $i++){
 
-            $newAnnonceur = new User($this->slugger);
+            $newAnnonceur = new User();
             $newAnnonceur->setEmail('annonceur' . $i . '@annonceur.fr')
                 ->setRoles(['ROLE_ANNONCEUR'])
                 ->setName($faker->firstName(rand(1, 2) == 1 ? 'female' : 'male'))
-                ->setPassword('annonceur')
+                ->setPassword($this->hasher->hashPassword('annnonceur'))
                 ->setCreatedAt(new DateTimeImmutable('now'))
                 ->setIsVerified($faker->numberBetween(0,1))
                 ->setAddress1($faker->streetAddress())

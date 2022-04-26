@@ -29,15 +29,12 @@ class UserCrudController extends AbstractCrudController
     
     public function configureFields(string $pageName): iterable
     {
-        return [
-            
+        return [            
             TextField::new('name')->setLabel('Prénom'),
-            SlugField::new('slug')->setTargetFieldName('name'),
             TextField::new('email')->setLabel('Email'),
             TextField::new('password')->hideOnIndex()->setLabel('Password'),
             ChoiceField::new('isVerified')->setChoices(['Oui' => 1, 'Non' => 0])->setLabel('Mail Vérifié'),
             ChoiceField::new('status')->setChoices(['Oui' => 1, 'Non' => 0])->setLabel('Annonceur'),
-            //ArrayField::new('roles')->hideOnIndex()->setLabel('Role'),
             TextField::new('address_1')->hideOnIndex()->setLabel('Adresse 1'),
             TextField::new('address_2')->hideOnIndex()->setLabel('Adresse 2'),
             TextField::new('city')->hideOnIndex()->setLabel('Ville'),
