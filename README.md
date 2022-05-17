@@ -1,5 +1,7 @@
 # CultureCityApp
 
+#### L'application permet d'une par à des acteurs culturels (après inscription sur l'appli) de partager très facilement une programmation événementielle et d'autre part au visiteur de naviguer instinctivement dans les événements proposés près de chez lui.
+
 ## Voir l'application :
 >https://culturecityapp.simschab.fr/
 
@@ -30,8 +32,6 @@
 9. Sql
 10. Api
 
-#### L'application permet d'une par à des acteurs culturels (après inscription sur l'appli) de partager très facilement une programmation événementielle et d'autre part au visiteur de naviguer instinctivement dans les événements proposés près de chez lui.
-
 ## 4 Semaines :
 
 1. Préparation et documentation du projet (Trello, MCD/MLD, Cahier des charges, Tableau des routes...)
@@ -42,9 +42,6 @@
 #### Nous avons étés particulièrement vigilents au fait de proposer une version parfaitement optimisée et réactive. Chaque User Storie à été réfléchie pour offrir aux différents rôles utilisateurs:
 
     Visiteur / Utilisateur / Annonceur / Administrateur 
-    
-#### une expérience positive lors de l'utilisation de l'application.
-
 
 #### **Le visiteur**  est geo-localisé sur la page d'accueil. L'application lui propose alors automatiquement les événements qui sont proches de chez lui. Il à la possibilité d'utiliser la pleine navigation sur l'application. Filtrer dynamiquement les événements (JS) par date, par catégorie ou par date + catégorie. 
 
